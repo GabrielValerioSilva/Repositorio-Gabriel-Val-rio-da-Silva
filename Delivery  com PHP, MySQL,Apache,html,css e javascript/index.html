@@ -1,0 +1,196 @@
+<html>
+
+
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="shortcut icon" href="./k1.jpg" type="image/svg+xml">
+
+  <!-- 
+    - css assets
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - imagens
+  -->
+  <link rel="preload" as="image" href="./assets/images/udon2.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+
+  <style>
+    /* Estilo para o vídeo de fundo */
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: blur(8px); /* Aplica o desfoque no vídeo */
+    }
+
+    /* Estilo para centralizar o conteúdo */
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      margin-top: 150px; 
+    }
+
+    h1 {
+      color: rgb(109, 45, 45);
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .btn-hover {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      background-color: rgba(151, 17, 17, 0.8); /* Cor de fundo dos botões */
+      border: none;
+      cursor: pointer;
+      margin: 10px 0;
+      transition: background-color 0.3s;
+    }
+
+    .btn-hover:hover {
+      background-color: rgb(184, 47, 47); /* Cor ao passar o mouse */
+    }
+  </style>
+  
+</head>
+
+<body id="top">
+
+  
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">Akatsuki<span class="span">.</span></a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="nav-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+         
+
+          <li class="nav-item">
+            <a href="#" class="navbar-link" data-nav-link>Contato</a>
+          </li>
+
+        </ul>
+      </nav>
+
+
+       
+        <button id="order-btn" class="btn btn-hover">Fazer pedido</button>
+
+
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        Background,imagens
+      -->
+
+      <section class="hero" id="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">comida japonesa autentica que preserva a originalidade</p>
+
+            <h2 class="h1 hero-title">Pratos orientais feitos por chefs com raizes japonesas!</h2>
+
+            <p class="hero-text">Udon,Bifum,Harussame,Ramen e Yakissoba</p>
+
+           
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner-bg.png" width="820" height="716" alt="" aria-hidden="true"
+              class="w-100 hero-img-bg">
+
+            <img src="./assets/images/udon2.png" width="700" height="637" loading="lazy" alt="Burger"
+              class="w-100 hero-img">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+<title>Restaurante Akatsuki Sistema-SGBD</title>
+
+<meta charset=”UTF-8”>
+
+</head>
+
+<body>
+
+
+ <!-- Vídeo de fundo -->
+ <video autoplay muted loop class="video-background">
+  <source src="japanfood.mp4" type="video/mp4">
+</video>
+
+
+
+
+
+
+<h1>Restaurante Akatsuki Sistema-SGBD</h1>
+
+
+
+
+
+        
+        <a href=loja-relacao-cliente.php><button id="order-btn" class="btn btn-hover"> Clientes</button></a><br />
+        <a href=produtos.html><button id="order-btn" class="btn btn-hover"> Produtos</button></a><br />
+        <a href="#"><button id="order-btn" class="btn btn-hover"> Pedidos</button></a><br />
+
+
+</body>
+
+</html>
