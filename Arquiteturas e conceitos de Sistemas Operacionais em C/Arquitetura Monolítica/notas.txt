@@ -1,0 +1,6 @@
+Explicação do Exemplo
+Estrutura Produto: Define os atributos de um produto.
+Array produtos: Simula um banco de dados em memória para armazenar produtos.
+Funções adicionarProduto e listarProdutos: Implementam funcionalidades de adicionar e listar produtos.
+Função main: Interface de usuário simples que permite adicionar e listar produtos.
+Neste exemplo, todas as funcionalidades são implementadas em um único programa, o que exemplifica a arquitetura monolítica.
