@@ -1,0 +1,12 @@
+origem,destino,latitude_origem,longitude_origem,latitude_destino,longitude_destino,tempo
+Curitiba,São Paulo,-25.4297,-49.2719,-23.5505,-46.6333,240
+Curitiba,Rio de Janeiro,-25.4297,-49.2719,-22.9068,-43.1729,420
+São Paulo,Rio de Janeiro,-23.5505,-46.6333,-22.9068,-43.1729,300
+São Paulo,Campinas,-23.5505,-46.6333,-22.9099,-47.0626,60
+Curitiba,Florianópolis,-25.4297,-49.2719,-27.5954,-48.5480,180
+Campinas,Rio de Janeiro,-22.9099,-47.0626,-22.9068,-43.1729,360
+Florianópolis,São Paulo,-27.5954,-48.5480,-23.5505,-46.6333,240
+Curitiba,Porto Alegre,-25.4297,-49.2719,-30.0346,-51.2177,360
+Porto Alegre,Florianópolis,-30.0346,-51.2177,-27.5954,-48.5480,240
+Rio de Janeiro,Belo Horizonte,-22.9068,-43.1729,-19.9167,-43.9345,300
+Belo Horizonte,São Paulo,-19.9167,-43.9345,-23.5505,-46.6333,360
