@@ -4,29 +4,28 @@
 #include <inttypes.h>
 
 struct GPU {
-   char Nvidia[8]; // Tamanho aumentado para acomodar "RTX4090" e o caractere nulo de terminação
-   uint16_t launch_Date; // Corrigido para "launch_Date"
+   char Nvidia[8]; 
+   uint16_t launch_Date; 
    double teraflops;
    float launch_price;
 };
 
 int main() {
     struct GPU video_card;
-    strncpy(video_card.Nvidia, "RTX4090", sizeof(video_card.Nvidia)); // Usando strncpy para evitar buffer overflow
+    strncpy(video_card.Nvidia, "RTX4090", sizeof(video_card.Nvidia)); 
     video_card.launch_Date = 2022;
     video_card.teraflops = 82.58;
-    video_card.launch_price = 1600.0f; // Melhor explicitar que é um float
+    video_card.launch_price = 1600.0f; 
 
     printf("\nOlá! pressione ENTER para ver as informações.");
    
 
-    char cmd[200]; // Aumentei o tamanho do buffer para garantir espaço suficiente
-
-    // Formate a string com sprintf
+    char cmd[200];
+   
     sprintf(cmd, "start cmd.exe /k echo Nome da GPU: %s, Endereço de memória da variável video_card: %p, Ano de lançamento: %d", video_card.Nvidia, (void *)&video_card, video_card.launch_Date);
     
 
-    // Execute o comando
+    
     system(cmd);
     
     
