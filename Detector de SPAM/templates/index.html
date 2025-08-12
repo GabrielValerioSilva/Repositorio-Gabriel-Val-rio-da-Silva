@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de SPAM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .ink-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        .ink-effect::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0,255,255,0.05) 0%, rgba(0,0,0,0) 70%);
+            animation: ink-move 15s infinite alternate;
+            z-index: -1;
+        }
+        @keyframes ink-move {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(25%, 15%); }
+            50% { transform: translate(10%, 30%); }
+            75% { transform: translate(30%, 10%); }
+            100% { transform: translate(15%, 25%); }
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #00FFFF 0%, #8A2BE2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .glass-panel {
+            background: rgba(15, 15, 15, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .popup-animation {
+            animation: fadeIn 0.3s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-black min-h-screen flex items-center justify-center p-4">
+    <!-- Main Container -->
+    <div class="glass-panel ink-effect rounded-2xl w-full max-w-md overflow-hidden">
+        <!-- Header -->
+        <div class="p-6 border-b border-gray-800">
+            <h1 class="gradient-text text-2xl font-bold text-center">Detector de SPAM</h1>
+            <div class="flex justify-center mt-3">
+                <div class="h-1 w-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full"></div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="p-6">
+            <div class="mb-5">
+                <label class="block text-gray-400 text-xs mb-2 font-medium uppercase tracking-wider">Texto de entrada</label>
+                <textarea id="emailInput" rows="5" 
+                    class="w-full px-4 py-3 bg-gray-900 text-gray-200 rounded-lg border border-gray-800 
+                           focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 
+                           placeholder-gray-600 transition-all duration-200 font-mono text-sm"
+                    placeholder=">Digite aqui o texto do seu email"></textarea>
+            </div>
+            
+            <button onclick="analyze()" 
+                class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white py-3 px-4 rounded-lg
+                       flex items-center justify-center gap-2 transition-all duration-300 hover:opacity-90
+                       active:scale-95 font-medium">
+                <span id="btnText">Analisar</span>
+                <span id="spinner" class="hidden material-icons animate-spin">autorenew</span>
+            </button>
+            
+            <div id="result" class="mt-6 hidden p-5 rounded-lg glass-panel text-sm"></div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="p-4 border-t border-gray-800 text-center">
+            <p class="text-gray-500 text-xs font-mono">
+                DEVELOPED BY GABRIEL VALERIO | SYSTEM v2.0
+            </p>
+        </div>
+    </div>
+    
+    <!-- Popup Modal -->
+    <div id="popup" class="fixed inset-0 flex items-center justify-center p-4 bg-black bg-opacity-70 hidden popup-animation z-50">
+        <div class="glass-panel rounded-xl max-w-md w-full p-6 relative">
+            <button onclick="closePopup()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <span class="material-icons">close</span>
+            </button>
+            <h2 class="gradient-text text-xl font-bold mb-3" id="popupTitle">Análise completa</h2>
+            <p class="text-gray-300 mb-4 text-sm" id="popupContent"></p>
+            <div class="w-full bg-gray-800 rounded-full h-2 mb-3">
+                <div id="spamMeter" class="h-2 rounded-full" style="width: 0%"></div>
+            </div>
+            <div class="flex justify-between text-xs text-gray-400 mb-4">
+                <span>0%</span>
+                <span>100%</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2">
+                <div class="p-2 bg-gray-900 rounded-lg text-center">
+                    <span class="material-icons text-cyan-500 text-sm mb-1">security</span>
+                    <p class="text-xs text-gray-400">AI Protection</p>
+                </div>
+                <div class="p-2 bg-gray-900 rounded-lg text-center">
+                    <span class="material-icons text-blue-500 text-sm mb-1">bolt</span>
+                    <p class="text-xs text-gray-400">Real-time</p>
+                </div>
+                <div class="p-2 bg-gray-900 rounded-lg text-center">
+                    <span class="material-icons text-purple-500 text-sm mb-1">code</span>
+                    <p class="text-xs text-gray-400">Neural Net</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function analyze() {
+            const email = document.getElementById('emailInput').value.trim();
+            const resultDiv = document.getElementById('result');
+            
+            // Reset
+            resultDiv.classList.add('hidden');
+            resultDiv.className = 'mt-6 hidden p-5 rounded-lg glass-panel text-sm';
+            
+            if (!email) {
+                showPopup("INPUT ERROR", "Please enter text to analyze", 0);
+                return;
+            }
+            
+            const btn = document.querySelector('button');
+            const btnText = document.getElementById('btnText');
+            const spinner = document.getElementById('spinner');
+            
+            // Loading state
+            btn.disabled = true;
+            btnText.textContent = "PROCESSING...";
+            spinner.classList.remove('hidden');
+            
+            try {
+                const response = await fetch('/analyze', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ text: email })
+                });
+                
+                const data = await response.json();
+                
+                if (data.is_spam === 1) {
+                    const spamProb = (data.probabilities.spam * 100).toFixed(2);
+                    showPopup(
+                        "SPAM DETECTADO", 
+                        `Está mensagem tem ${spamProb}% de probabilidade de ser SPAM.`, 
+                        spamProb
+                    );
+                } else {
+                    const spamProb = (data.probabilities.spam * 100).toFixed(2);
+                    showPopup(
+                        "Mensagem normal", 
+                        `Está mensagem tem apenas ${spamProb}% de probabilidade de SPAM.`, 
+                        spamProb
+                    );
+                }
+            } catch (error) {
+                showPopup("SYSTEM ERROR", "Please try again later", 0);
+            } finally {
+                btn.disabled = false;
+                btnText.textContent = "ANÁLISE";
+                spinner.classList.add('hidden');
+            }
+        }
+        
+        function showPopup(title, content, percentage) {
+            const popup = document.getElementById('popup');
+            const popupTitle = document.getElementById('popupTitle');
+            const popupContent = document.getElementById('popupContent');
+            const spamMeter = document.getElementById('spamMeter');
+            
+            popupTitle.textContent = title;
+            popupContent.textContent = content;
+            spamMeter.style.width = `${percentage}%`;
+            
+            // Change meter color based on percentage
+            if (percentage > 70) {
+                spamMeter.className = "bg-gradient-to-r from-red-500 to-pink-600 h-2 rounded-full";
+            } else if (percentage > 30) {
+                spamMeter.className = "bg-gradient-to-r from-yellow-500 to-orange-600 h-2 rounded-full";
+            } else {
+                spamMeter.className = "bg-gradient-to-r from-cyan-500 to-blue-600 h-2 rounded-full";
+            }
+            
+            popup.classList.remove('hidden');
+        }
+        
+        function closePopup() {
+            document.getElementById('popup').classList.add('hidden');
+        }
+    </script>
+
+<div id="toast-warning" 
+     class="flex items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800"
+     role="alert"
+     style="position: fixed; bottom: 120px; right: 20px; z-index: 9999;">
+    <div class="inline-flex items-center justify-center shrink-0 w-8 h-8 text-orange-500 bg-orange-100 rounded-lg dark:bg-orange-700 dark:text-orange-200">
+        <div class="inline-flex items-center justify-center shrink-0 w-8 h-8 text-orange-500 bg-orange-100 rounded-lg dark:bg-orange-700 dark:text-orange-200">
+    <span class="material-icons">update</span>
+</div>
+
+        <span class="sr-only">Warning icon</span>
+    </div>
+    <div class="ms-3 text-sm font-normal">Está aplicação está em constante atualização e em estado experimental</div>
+    <button type="button" 
+            class="ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700" 
+            data-dismiss-target="#toast-warning" aria-label="Close">
+        <span class="sr-only">Close</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+
+
+
+<ol class="items-center w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0 rtl:space-x-reverse
+    fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-gray-900 p-4 rounded-xl shadow-lg">
+    <li class="flex items-center text-blue-600 dark:text-blue-500 space-x-2.5 rtl:space-x-reverse">
+        <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full shrink-0 dark:border-blue-500">
+            1
+        </span>
+        <span>
+            <h3 class="font-medium leading-tight">Entrada de dados</h3>
+            <p class="text-sm">Digite texto a ser processado com base nos radicais da palavra</p>
+        </span>
+    </li>
+    <li class="flex items-center text-blue-500 dark:text-blue-400 space-x-2.5 rtl:space-x-reverse">
+        <span class="w-8 h-8 text-blue-200 animate-spin dark:text-blue-1600 fill-blue-600 rounded-full shrink-0 dark:blue-gray-400">
+            2
+        </span>
+        <span>
+            <h3 class="font-medium leading-tight">Processamento</h3>
+            <p class="text-sm">Utilizando treinamento com bibliotecas como Pandas e conceitos de AM</p>
+        </span>
+    </li>
+    <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
+        <span class="flex items-center justify-center w-8 h-8 border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+            3
+        </span>
+        <span>
+            <h3 class="font-medium leading-tight">Saída de Dados</h3>
+            <p class="text-sm">Resultado com condicional e limiar</p>
+        </span>
+    </li>
+</ol>
+
+<div class="absolute top-0 left-0 w-full h-full bg-cover bg-center -z-10 filter blur-sm"
+     style="background-image: url('https://i.pinimg.com/originals/6a/f6/10/6af610112ee51bd2ca321fd0a4de5164.gif');">
+     
+</div>
+<div class="absolute bottom-20 left-1/2 transform -translate-x-1/2 mb-4">
+    <div class="flex items-center justify-center">
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_SPAM.svg"
+            class="transform transition hover:scale-110 w-26 h-16"
+        >
+
+        <!-- Imagem do cachorro, começa invisível -->
+  <img
+    src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" 
+    alt="Cachorro"
+    class="absolute top-3 left-1001 w-16 h-16 opacity-0 transition-opacity duration-300 hover:opacity-30"
+  >
+    </div>
+</div>
+</body>
+</html>
