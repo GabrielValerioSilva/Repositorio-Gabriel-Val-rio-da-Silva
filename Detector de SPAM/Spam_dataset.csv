@@ -1,0 +1,326 @@
+label,text,label_num
+ham,"Assunto: reunião confirmada para terça-feira às 14h.",0
+spam,"Assunto: Ganhe dinheiro fácil e rápido! Oferta exclusiva!",1
+ham,"Assunto: entrega do relatório adiada para a próxima semana.",0
+spam,"Assunto: Você foi selecionado para receber um prêmio! Clique aqui.",1
+ham,"Assunto: convite para o almoço de confraternização.",0
+spam,"Assunto: Compre remédios baratos e sem receita!",1
+ham,"Assunto: atualização do sistema será realizada hoje à noite.",0
+spam,"Assunto: Oferta imperdível! Produtos com até 70% de desconto.",1
+ham,"Assunto: ata da reunião enviada para todos os participantes.",0
+spam,"Assunto: Aumente seu saldo bancário com este método secreto.",1
+ham,"Assunto: solicitação de férias aprovada.",0
+spam,"Assunto: Última chance para participar da promoção!",1
+ham,"Assunto: convite para palestra sobre inovação tecnológica.",0
+spam,"Assunto: Multiplique seus ganhos com este investimento!",1
+ham,"Assunto: informe financeiro mensal disponível no sistema.",0
+spam,"Assunto: Receba dinheiro na sua conta em 24 horas!",1
+ham,"Assunto: agenda do evento atualizada.",0
+spam,"Assunto: Clique aqui para desbloquear seu celular agora!",1
+ham,"Assunto: aprovação do projeto prevista para o próximo mês.",0
+spam,"Assunto: Oferta exclusiva só para hoje! Não perca!",1
+ham,"Assunto: formulário para inscrição em curso disponível.",0
+spam,"Assunto: Envie seu currículo e ganhe prêmios!",1
+ham,"Assunto: manutenção do servidor programada para domingo.",0
+spam,"Assunto: Ganhe iPhone grátis participando deste sorteio.",1
+ham,"Assunto: aviso sobre reunião com clientes.",0
+spam,"Assunto: Aumente seu patrimônio com pouco investimento.",1
+ham,"Assunto: novo regulamento interno disponível.",0
+spam,"Assunto: Promoção relâmpago com descontos incríveis.",1
+ham,"Assunto: mensagem sobre políticas de segurança.",0
+spam,"Assunto: Receba dinheiro fácil pelo seu celular.",1
+ham,"Assunto: lembrete de reunião da equipe amanhã.",0
+spam,"Assunto: Parabéns! Você foi premiado em nossa promoção.",1
+ham,"Assunto: alteração de horário no expediente.",0
+spam,"Assunto: Ganhe dinheiro sem sair de casa!",1
+ham,"Assunto: relatório de vendas do último trimestre.",0
+spam,"Assunto: Clique para baixar software gratuito e desbloqueado.",1
+ham,"Assunto: atualização de contatos da empresa.",0
+spam,"Assunto: Oferta exclusiva para clientes VIP. Aproveite!",1
+ham,"Assunto: treinamento sobre normas de qualidade.",0
+spam,"Assunto: Participe do sorteio e ganhe prêmios incríveis.",1
+ham,"Assunto: resultados da pesquisa interna divulgados.",0
+spam,"Assunto: Como ganhar dinheiro rápido e fácil! Saiba mais.",1
+ham,"Assunto: agradecimento pela participação no evento.",0
+spam,"Assunto: Ganhe dinheiro online sem esforço!",1
+ham,"Assunto: alteração na política de férias.",0
+spam,"Assunto: Promoção imperdível! Produtos com super desconto.",1
+ham,"Assunto: lembrete para envio de documentos.",0
+spam,"Assunto: Oferta limitada, aproveite antes que acabe!",1
+ham,"Assunto: boas-vindas ao novo colaborador.",0
+spam,"Assunto: Ganhe prêmios exclusivos clicando aqui.",1
+ham,"Assunto: comunicado sobre melhorias no sistema.",0
+spam,"Assunto: Seu saldo aumentou! Veja como aproveitar.",1
+ham,"Assunto: cronograma do próximo trimestre disponível.",0
+spam,"Assunto: Empréstimo rápido e sem burocracia!",1
+ham,"Assunto: feedback sobre o último projeto recebido.",0
+spam,"Assunto: Desconto de 50% em todos os produtos!",1
+ham,"Assunto: política de home office atualizada.",0
+spam,"Assunto: Seu número foi sorteado! Resgate seu prêmio.",1
+ham,"Assunto: relatório de despesas aprovado.",0
+spam,"Assunto: Viagem grátis para você e sua família!",1
+ham,"Assunto: novo procedimento para solicitação de materiais.",0
+spam,"Assunto: Cartão de crédito pré-aprovado com limite alto!",1
+ham,"Assunto: pesquisa de satisfação disponível.",0
+spam,"Assunto: Cupom de desconto exclusivo para você!",1
+ham,"Assunto: sistema de ponto eletrônico em manutenção.",0
+spam,"Assunto: Ganhe R$1000 em 5 minutos com este método!",1
+ham,"Assunto: diretrizes para trabalho remoto publicadas.",0
+spam,"Assunto: Sua conta foi selecionada para bônus especial!",1
+ham,"Assunto: recadastramento de senhas obrigatório.",0
+spam,"Assunto: Oferta válida apenas nas próximas 2 horas!",1
+ham,"Assunto: calendário de feriados corporativos.",0
+spam,"Assunto: Seu nome está na lista de premiados!",1
+ham,"Assunto: normas para uso do estacionamento.",0
+spam,"Assunto: Aplicativo que multiplica seu dinheiro!",1
+ham,"Assunto: procedimento para solicitação de vale-transporte.",0
+spam,"Assunto: Herdeiro de milionário precisa de sua ajuda!",1
+ham,"Assunto: novo modelo de crachá implementado.",0
+spam,"Assunto: Seu CPF foi contemplado com benefício!",1
+ham,"Assunto: orientações para teletrabalho.",0
+spam,"Assunto: Método secreto para enriquecer em 30 dias!",1
+ham,"Assunto: atualização do plano de saúde corporativo.",0
+spam,"Assunto: Você tem direito a restituição de valores!",1
+ham,"Assunto: procedimento para reserva de salas de reunião.",0
+spam,"Assunto: Concurso cultural com prêmios em dinheiro!",1
+ham,"Assunto: comunicado sobre uso de equipamentos.",0
+spam,"Assunto: Seu e-mail foi premiado! Resgate agora.",1
+ham,"Assunto: mudança no fornecedor de vale-refeição.",0
+spam,"Assunto: Aplicativo que paga para você assistir vídeos!",1
+ham,"Assunto: normas para descarte de materiais.",0
+spam,"Assunto: Seu número da sorte foi premiado!",1
+ham,"Assunto: procedimento para registro de horas extras.",0
+spam,"Assunto: Empréstimo com taxa zero para aposentados!",1
+ham,"Assunto: atualização do cadastro de funcionários.",0
+spam,"Assunto: Seu nome está na lista de ganhadores!",1
+ham,"Assunto: política de reembolso de despesas.",0
+spam,"Assunto: Trabalhe 1 hora por dia e ganhe R$5000!",1
+ham,"Assunto: novo procedimento para licença médica.",0
+spam,"Assunto: Herança de US$10 milhões precisa de herdeiro!",1
+ham,"Assunto: normas para uso de impressora.",0
+spam,"Assunto: Seu número foi sorteado na loteria!",1
+ham,"Assunto: procedimento para solicitação de equipamentos.",0
+spam,"Assunto: Ganhe dinheiro apenas compartilhando links!",1
+ham,"Assunto: atualização da política de privacidade.",0
+spam,"Assunto: Seu CPF tem direito a crédito especial!",1
+ham,"Assunto: orientações para trabalho em equipe.",0
+spam,"Assunto: Método proibido de multiplicar dinheiro!",1
+ham,"Assunto: novo modelo de avaliação de desempenho.",0
+spam,"Assunto: Você foi contemplado com bolsa de estudos!",1
+ham,"Assunto: procedimento para reserva de veículos.",0
+spam,"Assunto: Seu e-mail ganhou um prêmio especial!",1
+ham,"Assunto: atualização do sistema de ponto eletrônico.",0
+spam,"Assunto: Empréstimo sem comprovação de renda!",1
+ham,"Assunto: normas para uso de uniformes.",0
+spam,"Assunto: Seu número da sorte acaba de ser premiado!",1
+ham,"Assunto: procedimento para solicitação de materiais.",0
+spam,"Assunto: Trabalhe em casa e ganhe R$300 por dia!",1
+ham,"Assunto: atualização do plano de carreira.",0
+spam,"Assunto: Seu nome está na lista de contemplados!",1
+ham,"Assunto: orientações para prevenção de acidentes.",0
+spam,"Assunto: Método secreto dos milionários revelado!",1
+ham,"Assunto: novo procedimento para viagens corporativas.",0
+spam,"Assunto: Você tem direito a receber valores atrasados!",1
+ham,"Assunto: normas para uso de redes sociais no trabalho.",0
+spam,"Assunto: Seu CPF foi selecionado para benefício!",1
+ham,"Assunto: procedimento para registro de ponto.",0
+spam,"Assunto: Ganhe dinheiro dormindo com este método!",1
+ham,"Assunto: atualização da política de bonificação.",0
+spam,"Assunto: Seu e-mail foi sorteado na promoção!",1
+ham,"Assunto: orientações para atendimento ao cliente.",0
+spam,"Assunto: Empréstimo aprovado sem análise!",1
+ham,"Assunto: novo modelo de relatório mensal.",0
+spam,"Assunto: Seu número acaba de ser premiado!",1
+ham,"Assunto: procedimento para solicitação de treinamento.",0
+spam,"Assunto: Trabalhe 2 horas por dia e seja rico!",1
+ham,"Assunto: atualização do regulamento interno.",0
+spam,"Assunto: Seu nome está na relação de ganhadores!",1
+ham,"Assunto: normas para uso de equipamentos de proteção.",0
+spam,"Assunto: Método revolucionário para ganhar dinheiro!",1
+ham,"Assunto: procedimento para reserva de auditório.",0
+spam,"Assunto: Você tem crédito pré-aprovado no valor de R$5000!",1
+ham,"Assunto: atualização do sistema de gestão.",0
+spam,"Assunto: Seu CPF foi contemplado com auxílio!",1
+ham,"Assunto: orientações para economia de recursos.",0
+spam,"Assunto: Ganhe dinheiro apenas curtindo fotos!",1
+ham,"Assunto: novo procedimento para compras corporativas.",0
+spam,"Assunto: Seu e-mail foi premiado com valores!",1
+ham,"Assunto: normas para uso de dispositivos móveis.",0
+spam,"Assunto: Empréstimo com parcelas que cabem no bolso!",1
+ham,"Assunto: procedimento para solicitação de ajuda de custo.",0
+spam,"Assunto: Seu número da sorte acaba de sair!",1
+ham,"Assunto: atualização da política de viagens.",0
+spam,"Assunto: Seu nome foi sorteado na promoção relâmpago!",1
+ham,"Assunto: orientações para armazenamento de documentos.",0
+spam,"Assunto: Método exclusivo para multiplicar seu dinheiro!",1
+ham,"Assunto: novo modelo de formulário de despesas.",0
+spam,"Assunto: Você tem direito a receber valores esquecidos!",1
+ham,"Assunto: normas para uso de espaços compartilhados.",0
+spam,"Assunto: Seu CPF foi selecionado para receber valores!",1
+ham,"Assunto: procedimento para registro de entrada/saída.",0
+spam,"Assunto: Ganhe dinheiro apenas compartilhando posts!",1
+ham,"Assunto: atualização do sistema de reservas.",0
+spam,"Assunto: Seu e-mail foi contemplado com prêmio!",1
+ham,"Assunto: orientações para uso de ferramentas digitais.",0
+spam,"Assunto: Empréstimo com aprovação imediata!",1
+ham,"Assunto: novo procedimento para relatório de atividades.",0
+spam,"Assunto: Seu número foi premiado no sorteio especial!",1
+ham,"Assunto: normas para uso de laboratório.",0
+spam,"Assunto: Trabalhe pouco e ganhe muito com este método!",1
+ham,"Assunto: procedimento para solicitação de transporte.",0
+spam,"Assunto: Seu nome está na lista de beneficiados!",1
+ham,"Assunto: atualização da política de benefícios.",0
+spam,"Assunto: Método secreto para ganhar na loteria!",1
+ham,"Assunto: orientações para uso de assinatura digital.",0
+spam,"Assunto: Você tem crédito disponível para saque!",1
+ham,"Assunto: novo modelo de avaliação de projetos.",0
+spam,"Assunto: Seu CPF foi premiado na promoção!",1
+ham,"Assunto: normas para uso de equipamentos eletrônicos.",0
+spam,"Assunto: Ganhe dinheiro apenas respondendo pesquisas!",1
+label,text,label_num
+ham,"Oi tudo bem? Sou o João, lembra de mim?",0
+spam,"GANHE R$1000 em 5 minutos! Clique neste link milagroso!",1
+ham,"Olá, a gente tinha combinado de nos encontrar hoje?",0
+spam,"Promoção RELÂMPAGO! iPhone grátis para os 100 primeiros!",1
+ham,"Bom dia! Você recebeu aquele documento que enviei?",0
+spam,"EMPRÉSTIMO rápido sem análise de crédito! Dinheiro na hora!",1
+ham,"Oi sumido! Faz tempo que não nos falamos, como vai?",0
+spam,"SUPER desconto 90% em remédios sem receita! Compre já!",1
+ham,"E aí, vamos marcar aquele almoço essa semana?",0
+spam,"SEU NÚMERO FOI SORTEADO! Resgate seu prêmio de R$5000!",1
+ham,"Oi amor, pode pegar as crianças na escola hoje?",0
+spam,"CRIPTOMOEDAS que vão explodir! Invista agora e fique rico!",1
+ham,"Fala Paulo! Aquele projeto que comentamos está saindo?",0
+spam,"DESCONTO 70% em produtos de luxo - só hoje!",1
+ham,"Oi mãe, lembra de comprar o remédio que falei?",0
+spam,"SEU CELULAR FOI HACKEADO! Clique para se proteger!",1
+ham,"E aí brother, vamos no jogo sábado?",0
+spam,"RECEBA dinheiro do governo! Seu CPF foi selecionado!",1
+ham,"Oi docinho, quer jantar fora hoje?",0
+spam,"PERCA 10kg em 3 dias com este método revolucionário!",1
+ham,"Fala sério! Você esqueceu meu aniversário de novo?",0
+spam,"PRECISA de dinheiro urgente? Empréstimo 100% online!",1
+ham,"Oi vó, como tá passando? Precisando de alguma coisa?",0
+spam,"SORTEIO de carro zero! Participe agora pelo WhatsApp!",1
+ham,"E aí time, vamos rever a estratégia para o projeto?",0
+spam,"SUA CONTA foi selecionada para receber bônus de R$200!",1
+ham,"Oi moça, lembra de mim? A gente se viu na festa da Ana",0
+spam,"Trabalhe em CASA ganhando R$300 por dia! Sem experiência!",1
+ham,"Boa tarde sr. Carlos, o senhor viu meu e-mail?",0
+spam,"PRODUTOS importados com 80% OFF - estoque limitado!",1
+ham,"Oi amiga, você ainda quer aquele vestido que comentei?",0
+spam,"SEU NOME está na lista de herdeiros de milionário!",1
+ham,"Fala Rodrigo, conseguiu falar com o cliente?",0
+spam,"APOSTAS esportivas com retorno garantido! Método infalível!",1
+ham,"Oi vizinha, posso pegar uma xícara de açúcar?",0
+spam,"CELULAR desbloqueado por apenas R$199! Promoção relâmpago!",1
+ham,"E aí galera, confirmado o churrasco no sábado?",0
+spam,"RECEBA até R$5000 por indicar amigos! Cadastre-se já!",1
+ham,"Oi linda, já decidiu que filme vamos ver hoje?",0
+spam,"DIVIDA sendo negociada! Clique para quitar com 90% OFF!",1
+ham,"Fala professor, tem um minuto pra tirar uma dúvida?",0
+spam,"CURSO de trading que multiplica seu dinheiro em 7 dias!",1
+ham,"Oi pai, você lembra onde deixou a chave do carro?",0
+spam,"BONUS de R$50 para novos usuários! Cadastre-se agora!",1
+ham,"E aí pessoal, quem vai na festa da empresa sexta?",0
+spam,"VIAGEM internacional por 10% do valor! Oferta por tempo limitado!",1
+ham,"Oi marido, pode passar no mercado na volta?",0
+spam,"SEU CARTÃO foi clonado! Clique aqui para se proteger!",1
+ham,"Fala Dr., meu exame já está pronto?",0
+spam,"CONCURSO de beleza! Você pode ganhar até R$50 mil!",1
+ham,"Oi filho, já almoçou? Tem comida na geladeira",0
+spam,"SUA INTERNET será cortada! Clique para regularizar!",1
+ham,"E aí time, precisamos terminar o relatório hoje",0
+spam,"SACRIFÍCIO de animais! Sua ajuda é urgente! Doe agora!",1
+ham,"Oi moço, a encomenda já chegou?",0
+spam,"FIQUE rico dormindo! Método secreto revelado!",1
+ham,"Boa noite amor, já estou chegando em casa",0
+spam,"PRECISA de dinheiro? Empréstimo com aprovação em 1 minuto!",1
+ham,"Fala meu chapa, bora tomar uma cerveja hoje?",0
+spam,"SUA FATURA atrasada! Regularize agora com 95% de desconto!",1
+ham,"Oi tia, como tá se sentindo? Precisa de algo?",0
+spam,"APLICATIVO paga para você assistir vídeos! Ganhe até R$100/dia!",1
+ham,"E aí chefe, posso sair mais cedo hoje?",0
+spam,"HERANÇA de familiar desconhecido! Você tem direito!",1
+ham,"Oi namorado, esqueci a carteira em casa, pode pagar?",0
+spam,"CUPOM de desconto de R$100 para primeira compra!",1
+ham,"Fala time, a reunião de amanhã foi adiada",0
+spam,"SEU WHATSAPP será bloqueado! Clique para evitar!",1
+ham,"Oi filha, já chegou na faculdade?",0
+spam,"GANHE seguidores rápidos! Compre pacote com 70% OFF!",1
+ham,"E aí colega, conseguiu resolver aquele problema?",0
+spam,"DINHEIRO fácil e rápido! Empréstimo sem comprovação!",1
+ham,"Oi amor, pode buscar as crianças na escola?",0
+spam,"PROMOÇÃO: Notebook por apenas R$499! Só hoje!",1
+ham,"Fala pessoal, vamos combinar a viagem de fim de ano",0
+spam,"SEU NOME foi sorteado! Resgate seu prêmio de R$3000!",1
+ham,"Oi vovó, como tá a pressão hoje?",0
+spam,"DESBLOQUEIE seu potencial de ganhos! Curso exclusivo!",1
+ham,"E aí irmão, lembra de mim? Faz tempo!",0
+spam,"CELULAR grátis! Participe do sorteio exclusivo!",1
+ham,"Oi gente, quem vai na festa da Julia sábado?",0
+spam,"EMPRÉSTIMO para negativados! Aprovação 100% garantida!",1
+ham,"Fala meu bom, bora marcar aquele futebol?",0
+spam,"SUA CONTA corrente tem direito a bônus! Clique para receber!",1
+ham,"Oi mãe, lembra da receita daquela torta?",0
+spam,"PERFUMES importados com 80% OFF! Aproveite!",1
+ham,"E aí professor, já corrigiu as provas?",0
+spam,"SEU CARRO está com recall! Clique para agendar reparo!",1
+ham,"Oi amigo, ainda quer comprar minha moto?",0
+spam,"REDE social paga para postar! Ganhe até R$200/dia!",1
+ham,"Fala meu parceiro, cadê aquela ferramenta que te emprestei?",0
+spam,"SUA FATURA do cartão com desconto especial! Pague agora!",1
+ham,"Oi moça, a gente se viu na balada semana passada, lembra?",0
+spam,"APOSTAS esportivas com retorno de 500%! Método comprovado!",1
+ham,"E aí galera do trabalho, vamos sair hoje?",0
+spam,"SEU NÚMERO da sorte acaba de ser premiado! Resgate já!",1
+ham,"Oi pai, você viu onde deixei meu celular?",0
+spam,"CURSO de inglês em 30 dias! Garanta sua vaga!",1
+ham,"Fala time, precisamos entregar o projeto até sexta",0
+spam,"DINHEIRO na conta em 5 minutos! Sem burocracia!",1
+ham,"Oi amor, já reservei aquele restaurante para sexta",0
+spam,"PROMOÇÃO: TV 50 polegadas por apenas R$799!",1
+ham,"E aí colega, vamos almoçar juntos hoje?",0
+spam,"SEU CPFOI SELECIONADO para receber auxílio emergencial!",1
+ham,"Oi filho, já fez a lição de casa?",0
+spam,"GANHE R$50 por cada amigo indicado! Cadastre-se!",1
+ham,"Fala meu bom, cadê você? Tô te esperando aqui",0
+spam,"SUA ENERGIA será cortada! Regularize agora com 70% OFF!",1
+ham,"Oi docinho, posso passar aí mais tarde?",0
+spam,"INVESTIMENTO com retorno de 200% em 1 mês! Garantido!",1
+ham,"E aí time, vamos revisar o cronograma do projeto?",0
+spam,"SEU WHATSAPP está prestes a ser bloqueado! Clique para evitar!",1
+ham,"Oi mãe, lembra de pegar meus documentos na escola?",0
+spam,"VIAGEM para Europa por apenas R$999! Promoção por tempo limitado!",1
+ham,"Fala chefe, posso chegar um pouco mais tarde amanhã?",0
+spam,"SUA CONTA tem crédito pré-aprovado de R$10.000!",1
+ham,"Oi amor, já comprei os ingressos para o cinema",0
+spam,"PARE de sofrer com dívidas! Negocie agora com 90% OFF!",1
+ham,"E aí pessoal, confirmado o happy hour hoje?",0
+spam,"SEU NOME está na lista de herdeiros! Resgate seus direitos!",1
+ham,"Oi vó, posso passar aí no final de semana?",0
+spam,"GANHE dinheiro apenas curtindo fotos! R$100 por dia!",1
+ham,"Fala meu chapa, bora tomar um açaí?",0
+spam,"SUA INTERNET está lenta? Clique para acelerar agora!",1
+ham,"Oi namorada, já reservei aquele spa para sábado",0
+spam,"CUPOM de R$150 para primeira compra! Válido por 2 horas!",1
+ham,"E aí galera do prédio, vamos fazer churrasco?",0
+spam,"SEU CELULAR tem vírus! Clique para remover agora!",1
+ham,"Oi tio, como tá se recuperando da cirurgia?",0
+spam,"EMPRÉSTIMO para aposentados! Taxa zero!",1
+ham,"Fala equipe, precisamos bater a meta esse mês",0
+spam,"SUA ASSINATURA está prestes a vencer! Renove agora!",1
+ham,"Oi filha, já decidiu que curso vai fazer?",0
+spam,"GANHE seguidores reais! Pacote com 70% de desconto!",1
+ham,"E aí brother, vamos no show semana que vem?",0
+spam,"SEU VEÍCULO está com recall! Agende reparo gratuito!",1
+ham,"Oi amor, pode pegar uma pizza na volta?",0
+spam,"PROMOÇÃO: Smartphone top de linha por apenas R$399!",1
+ham,"Fala time, vamos precisar trabalhar no sábado",0
+spam,"SUA CONTA tem bônus de R$200 para resgate imediato!",1
+ham,"Oi mãe, lembra de regar minhas plantas?",0
+spam,"CURSO de marketing digital que vai te deixar rico!",1
+ham,"E aí colega, vamos marcar aquele café?",0
+spam,"DINHEIRO fácil! Empréstimo sem análise de crédito!",1
+ham,"Oi vovô, como tá a saúde? Precisa de alguma coisa?",0
+spam,"SEU NOME foi sorteado em promoção exclusiva! Resgate seu prêmio!",1
