@@ -87,7 +87,7 @@ if __name__ == "__main__":
     ASSETS_DIR.mkdir(exist_ok=True)
     
     # Carrega e treina o modelo
-    print("🔍 Carregando e treinando o modelo...")
+    print("Carregando e treinando o modelo...")
     nltk.download('stopwords', quiet=True)
     nltk.download('rslp', quiet=True)
     
@@ -107,14 +107,15 @@ if __name__ == "__main__":
     clf.fit(X_train, y_train)
     
     limiar_spam = 0.55
-    print(f"✅ Modelo treinado - Acurácia: {clf.score(X_test, y_test):.2%}")
+    print(f"Modelo treinado - Acurácia: {clf.score(X_test, y_test):.2%}")
     
     # Inicia servidor
     server = HTTPServer(('localhost', 8000), RequestHandler)
-    print("\n🌐 Servidor iniciado em http://localhost:8000")
+    print("\n Servidor iniciado em http://localhost:8000")
     webbrowser.open("http://localhost:8000")
     
     try:
         server.serve_forever()
     except KeyboardInterrupt:
-        print("\n🛑 Servidor encerrado")
+
+        print("\n Servidor encerrado")
